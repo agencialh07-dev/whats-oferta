@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsOferta — Your Offers</title>
+  <link rel="stylesheet" href="assets/css/ofertas.css" />
+</head>
+<body>
+<div class="top-banner">
+  <div class="top-banner__alert">
+    <h1>
+      ⚠ EMERGENCY ALERT
+    </h1>
+    <h2>
+      Complete the payment before all the data found is
+      <strong>permanently deleted!</strong>
+    </h2>
+  </div>
+  <div class="top-banner__countdown">
+    <span>DELETING DATA IN</span>
+    <strong id="countdown">06:35</strong>
+    <span>MINUTES</span>
+  </div>
+</div>
+
+  <main class="page">
+    <div class="brand">
+      <span class="brand__icon">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+  <circle cx="16" cy="16" r="9" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+
+  <path d="M16 2V30" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+  <path d="M2 16H30" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+
+  <path d="M16 16L25.5 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+
+  <circle cx="16" cy="16" r="2" fill="currentColor"/>
+  <circle cx="23" cy="10" r="1.5" fill="currentColor"/>
+</svg>      </span>
+      WhatsRadar
+    </div>
+
+    <div class="emergency-alert">
+        <h2>⚠ Your relationship may be in danger!</h2>
+        <p>
+            Our data-driven algorithm, using <strong>words and photos</strong>,
+            detected suspicious messages and files on the WhatsApp of
+            <strong class="phone-display" id="alert-phone">+55 18 99819-6826</strong>
+        </p>
+    </div>
+    
+    <div class="profile-card">
+    <div class="profile-row">
+
+        <div class="profile-avatar-wrap">
+            <div class="wa-avatar-ring">
+                <div class="wa-avatar-inner" id="cta-avatar-wrap">
+
+                    <svg
+                        id="cta-avatar-icon"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <!-- Outer circle -->
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9.5"
+                            stroke="#ffffff"
+                            stroke-width="1.5"
+                        />
+
+                        <!-- Head -->
+                        <circle
+                            cx="12"
+                            cy="9"
+                            r="3"
+                            stroke="#ffffff"
+                            stroke-width="1.5"
+                        />
+
+                        <!-- Shoulders -->
+                        <path
+                            d="M6.5 19.2C6.9 16.4 9.1 14.5 12 14.5C14.9 14.5 17.1 16.4 17.5 19.2"
+                            stroke="#ffffff"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+
+                    <img
+                        id="cta-avatar-photo"
+                        src=""
+                        alt=""
+                        style="display:none;"
+                    >
+
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-info">
+
+            <div class="profile-phone" id="profile-phone">
+                +55 18 99819-6826
+            </div>
+
+            <div class="profile-label">
+                Number under investigation
+            </div>
+
+            <div class="profile-status">
+                <span class="status-dot"></span>
+                WhatsApp active
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <section class="results-card">
+      <h2 class="results-card__title">Analysis results</h2>
+      <ul class="results-list">
+        <li>
+          <span class="results-icon results-icon--radar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+          </span>
+          <span class="results-text">We found <b class="hl">58</b> suspicious messages on WhatsApp</span>
+        </li>
+        <li>
+          <span class="results-icon results-icon--chat">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </span>
+          <span class="results-text"><b class="hl">13</b> messages containing the word "<b class="hl">hot</b>"</span>
+        </li>
+        <li>
+          <span class="results-icon results-icon--heart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </span>
+          <span class="results-text"><b class="hl">41</b> messages containing the word "<b class="hl">love</b>"</span>
+        </li>
+        <li>
+          <span class="results-icon results-icon--photo">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 15l-5-5-9 9"/></svg>
+          </span>
+          <span class="results-text"><b class="hl">20</b> photos and <b class="hl">5</b> videos are hidden behind a password on the phone</span>
+        </li>
+        <li>
+          <span class="results-icon results-icon--secret">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span class="results-text"><b class="hl">8</b> messages containing the word "<b class="hl">secret</b>"</span>
+        </li>
+        <li>
+          <span class="results-icon results-icon--people">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="3.3"/><path d="M22 21v-2a3.5 3.5 0 0 0-2.7-3.4"/><path d="M16 3.6A3.3 3.3 0 0 1 16 10"/></svg>
+          </span>
+          <span class="results-text">There is an <strong>unsaved contact</strong> who frequently sends several messages saying they <b class="hl">miss you</b></span>
+        </li>
+        <li>
+          <span class="results-icon results-icon--eye">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <span class="results-text"><b class="hl">9</b> images received as <strong>view once</strong> were identified and restored</span>
+        </li>
+        <li>
+          <span class="results-icon results-icon--pin">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg>
+          </span>
+          <span class="results-text"><b class="hl">7</b> suspicious locations were detected nearby</span>
+        </li>
+        <li>
+          <span class="results-icon results-icon--phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1.2 1.2 0 0 1 1.2-.3 9.7 9.7 0 0 0 3 .5 1.2 1.2 0 0 1 1.2 1.2V20a1.2 1.2 0 0 1-1.2 1.2A17.8 17.8 0 0 1 2.8 3.2 1.2 1.2 0 0 1 4 2h3.4a1.2 1.2 0 0 1 1.2 1.2 9.7 9.7 0 0 0 .5 3 1.2 1.2 0 0 1-.3 1.2z"/></svg>
+          </span>
+          <span class="results-text"><b class="hl">2</b> archived conversations were flagged as <strong>suspicious</strong></span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="divider-banner">
+      <strong class="divider-banner__title">Spying 100% complete!</strong>
+      <span class="divider-banner__text">We found compromising content on the WhatsApp of <span id="divider-phone">your number</span></span>
+    </div>
+
+    <section class="alert-card alert-card--dark">
+      <p class="alert-card__label alert-card__label--dark">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9z"/></svg>
+        DELETED MESSAGES FOUND
+      </p>
+      <p class="alert-card__title">
+        <span class="fc-white">We recovered</span> <span class="fc-green">deleted messages</span> <span class="fc-white">from the</span>
+        <span class="fc-white">WhatsApp of <span id="chat-phone">your number</span></span>
+      </p>
+      <p class="alert-card__text">
+        Conversations that were deleted but our system managed to recover. <strong id="chat-phone-body">your number</strong>
+        doesn't know we have them.
+      </p>
+
+      <div class="phone-mock">
+        <div class="phone-mock__statusbar">
+          <span>14:23</span>
+          <span>●●●</span>
+        </div>
+        <div class="phone-mock__header">
+          <svg class="phone-mock__back" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span class="phone-mock__avatar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c.7-3.5 3.3-5.5 6.5-5.5s5.8 2 6.5 5.5" stroke-linecap="round"/></svg>
+          </span>
+          <div class="phone-mock__contact">
+            <strong id="chat-mockup-phone">your number</strong>
+            <small>online</small>
+          </div>
+          <div class="phone-mock__actions">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1.2 1.2 0 0 1 1.2-.3 9.7 9.7 0 0 0 3 .5 1.2 1.2 0 0 1 1.2 1.2V20a1.2 1.2 0 0 1-1.2 1.2A17.8 17.8 0 0 1 2.8 3.2 1.2 1.2 0 0 1 4 2h3.4a1.2 1.2 0 0 1 1.2 1.2 9.7 9.7 0 0 0 .5 3 1.2 1.2 0 0 1-.3 1.2z"/></svg>
+          </div>
+        </div>
+        <div class="phone-mock__chat">
+          <div class="chat-msg chat-msg--in">I miss you, my love</div>
+          <div class="chat-msg chat-msg--out">I miss you too</div>
+          <div class="chat-msg chat-msg--in">See you later?</div>
+          <div class="chat-msg chat-msg--out chat-msg--audio">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <span class="chat-msg__wave"></span>
+          </div>
+          <div class="chat-msg chat-msg--in">Deal, see you soon</div>
+          <div class="phone-mock__lock">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+            <span>Conversation locked</span>
+          </div>
+        </div>
+        <div class="phone-mock__inputbar">
+          <span>Message</span>
+          <span class="phone-mock__send">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="contacts-mock">
+        <div class="contacts-mock__row">
+          <span class="phone-mock__avatar phone-mock__avatar--sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c.7-3.5 3.3-5.5 6.5-5.5s5.8 2 6.5 5.5" stroke-linecap="round"/></svg>
+          </span>
+          <div class="contacts-mock__lines"><span></span><span></span></div>
+        </div>
+        <div class="contacts-mock__row">
+          <span class="phone-mock__avatar phone-mock__avatar--sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c.7-3.5 3.3-5.5 6.5-5.5s5.8 2 6.5 5.5" stroke-linecap="round"/></svg>
+          </span>
+          <div class="contacts-mock__lines"><span></span><span></span></div>
+        </div>
+        <div class="locked-box__overlay">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+          <span>Contacts locked</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="alert-card alert-card--dark">
+      <p class="alert-card__label alert-card__label--photo">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+        PRIVATE PHOTOS INTERCEPTED
+      </p>
+      <p class="alert-card__title">
+        <span class="fc-white">We found</span> <span class="fc-green">photos sent privately</span> <span class="fc-white">by</span>
+        <span class="fc-green" id="photo-phone">your number</span>
+      </p>
+      <p class="alert-card__text">
+        Images sent in private chats that <strong>disappear after being opened.</strong> We already saved them for you.
+      </p>
+
+      <!-- Photo grid: each .photo-mock__item is just a dark placeholder with a lock icon.
+           To add a real image later, set background-image on that item
+           (e.g. style="background-image:url('path/to/photo.jpg')") and remove the
+           blur filter on .photo-mock__item if you don't want the blurred effect. -->
+      <div class="photo-mock-grid">
+        <div class="photo-mock__item photo-mock__item--big">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+        </div>
+        <div class="photo-mock__item photo-mock__item--tall1">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+        </div>
+        <div class="photo-mock__item photo-mock__item--tall2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+        </div>
+        <div class="photo-mock__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+        </div>
+        <div class="photo-mock__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+        </div>
+        <div class="photo-mock__item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-card">
+      <div class="price-card__logo">
+        <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <circle cx="16" cy="16" r="9" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+          <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+          <path d="M16 2V30" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+          <path d="M2 16H30" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+          <path d="M16 16L25.5 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="16" cy="16" r="2" fill="currentColor"/>
+          <circle cx="23" cy="10" r="1.5" fill="currentColor"/>
+        </svg>
+        <span><span class="price-card__logo-whats">Whats</span><span class="price-card__logo-radar">Radar</span></span>
+      </div>
+      <p class="price-card__text">With <strong>WhatsRadar</strong> you'll get full access to your partner's WhatsApp for just:</p>
+      <div class="price-card__box">
+        <p class="price-card__old">From: <s>$197.00</s></p>
+        <p class="price-card__new">$<strong>137</strong><span>.00</span></p>
+      </div>
+      <a class="price-card__cta" href="#" id="unlock-btn">
+        UNLOCK ACCESS NOW
+      </a>
+      <p class="price-card__social">100% safe and anonymous transaction</p>
+      <div class="price-card__badges">
+        <span>30-day guarantee</span>
+        <span>1-year access</span>
+        <span>Up to 3 numbers</span>
+        <span>100% anonymous</span>
+      </div>
+    </section>
+
+    <section class="feature-card feature-card--dark">
+      <p class="feature-card__label feature-card__label--clock">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm.5 5v5.3l4.3 2.6-.8 1.3L11 13V7z"/></svg>
+        LAST CONNECTION DETECTED
+      </p>
+      <p class="feature-card__title">
+        <span class="fc-white" id="clock-phone">your number</span> <span class="fc-white">was online at a</span> <span class="fc-green">different time than they said</span>
+      </p>
+      <p class="feature-card__text">We detected the exact time of <span id="clock-phone-body">your number</span>'s last connection, even with <strong>"last seen"</strong> hidden.</p>
+      <div class="locked-box locked-box--audio">
+        <div class="audio-waves">
+          <div class="audio-row"><span class="audio-dot"></span><span class="audio-bar"></span><span class="audio-dot audio-dot--sm"></span></div>
+          <div class="audio-row"><span class="audio-dot audio-dot--red"></span><span class="audio-bar audio-bar--red"></span><span class="audio-dot audio-dot--sm audio-dot--red"></span></div>
+        </div>
+        <div class="locked-box__overlay">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+          <span>Data locked</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: map card — reserved for a real map of partner stores. -->
+    <section class="feature-card feature-card--dark">
+      <p class="feature-card__label feature-card__label--pin">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        SUSPICIOUS LOCATION DETECTED
+      </p>
+      <p class="feature-card__title">
+        <span class="fc-teal" id="map-phone">your number</span> <span class="fc-white">secretly shared their</span>
+        <span class="fc-green">location</span> <span class="fc-white">last night</span>
+      </p>
+      <p class="feature-card__text">We detected that <span id="map-phone-body">your number</span> was in a different place than they told you. <strong>The exact map is locked until you confirm your access.</strong></p>
+      <div class="map-mock">
+        <div class="map-mock__roads"></div>
+        <div class="map-mock__park"></div>
+        <span class="map-mock__label" style="top:14px; left:14px;">DOWNTOWN</span>
+        <svg class="map-mock__pin" width="34" height="34" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s7-7.4 7-12a7 7 0 1 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="9" r="2.6" fill="#1a1830"/></svg>
+        <div class="map-mock__chip"></div>
+        <div class="map-mock__overlay">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+          <span>Location locked</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-card feature-card--dark">
+      <p class="feature-card__label feature-card__label--audio">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21H9v2h6v-2h-2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z"/>
+        </svg>
+        SUSPICIOUS AUDIO FOUND
+      </p>
+      <p class="feature-card__title">
+        <span class="fc-white">We intercepted</span> <span class="fc-green">audio messages</span> <span class="fc-white">sent by</span> <span class="fc-teal" id="audio-phone">your number</span>
+      </p>
+      <p class="feature-card__text"><b class="hl">12</b> audio messages were captured and transcribed. Some contain <strong>intimate and compromising content.</strong></p>
+      <div class="locked-box locked-box--audio">
+        <div class="audio-waves">
+          <div class="audio-row"><span class="audio-dot"></span><span class="audio-bar"></span><span class="audio-dot audio-dot--sm"></span></div>
+          <div class="audio-row"><span class="audio-dot"></span><span class="audio-bar"></span><span class="audio-dot audio-dot--sm"></span></div>
+        </div>
+        <div class="locked-box__overlay">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM8.9 6A3.1 3.1 0 0 1 12 2.9 3.1 3.1 0 0 1 15.1 6v2H8.9z"/></svg>
+          <span>Audio locked</span>
+        </div>
+      </div>
+    </section>
+
+    <span class="unlock-pill"> Real testimonials</span>
+    <h2 class="testimonials-title">See who already found out the truth</h2>
+
+    <!-- TODO: testimonial cards — reserved for real customer videos. -->
+    <div class="testimonial-card">
+      <div class="testimonial-card__header">
+        <strong>Fernanda M.</strong>
+        <span class="verified-badge"><i class="dot"></i>verified</span>
+      </div>
+      <div class="testimonial-video">
+        <button class="play-btn" type="button" aria-label="Watch testimonial">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+      <span class="stars">★★★★★</span>
+      <p>"I found out everything he was hiding, the deleted messages showed up perfectly."</p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-card__header">
+        <strong>Rafael T.</strong>
+        <span class="verified-badge"><i class="dot"></i>verified</span>
+      </div>
+      <div class="testimonial-video">
+        <button class="play-btn" type="button" aria-label="Watch testimonial">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+      <span class="stars">★★★★★</span>
+      <p>"Super easy to use, within a few minutes I already had access to everything."</p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-card__header">
+        <strong>Juliana P.</strong>
+        <span class="verified-badge"><i class="dot"></i>verified</span>
+      </div>
+      <div class="testimonial-video">
+        <button class="play-btn" type="button" aria-label="Watch testimonial">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+      <span class="stars">★★★★★</span>
+      <p>"I recommend it, I finally found out the truth and it was totally worth it."</p>
+    </div>
+
+    <section class="final-cta">
+      <h2>Want to find out<br>the whole <span>truth</span>?</h2>
+      <p>Unlock now all the messages, photos, locations and real connection times.
+
+</p>
+      <a class="final-cta__btn" href="#" id="unlock-btn-2">I WANT TO KNOW THE TRUTH NOW</a>
+      <div class="final-cta__trust">
+        <span>100% anonymous - </span>
+        <span>  No traces </span>
+        <span>- Instant access</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/ofertas.js"></script>
+</body>
+</html>

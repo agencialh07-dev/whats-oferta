@@ -1,0 +1,9 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Explicit/adult images not meant to be committed to this repo
+assets/img/Foto-*.webp
