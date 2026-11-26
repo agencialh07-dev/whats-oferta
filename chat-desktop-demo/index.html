@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1110">
+  <meta name="description" content="Enter your phone number to start accessing WhatsApp.">
+  <title>Spy Whatsapp</title>
+  <link rel="stylesheet" href="css/access.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero" id="entry-screen" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="status-dot"></span> WHATSAPP CONNECTION</div>
+      <h1 id="page-title">Spy Whatsapp</h1>
+      <p class="subtitle">Enter your phone number to get started with WhatsApp.</p>
+
+      <form class="access-card" id="access-form">
+        <div class="card-heading">
+          <span class="step-tag">STEP 01</span>
+          <span class="secure-note"><span aria-hidden="true">◈</span> Secure connection</span>
+        </div>
+        <label for="country">Country or region</label>
+        <div class="country-wrap">
+          <span id="country-flag" aria-hidden="true">🇺🇸</span>
+          <select id="country" name="country" autocomplete="country">
+            <option value="US" data-code="+1" data-flag="🇺🇸" selected>United States (+1)</option>
+            <option value="CA" data-code="+1" data-flag="🇨🇦">Canada (+1)</option>
+            <option value="BR" data-code="+55" data-flag="🇧🇷">Brazil (+55)</option>
+            <option value="PT" data-code="+351" data-flag="🇵🇹">Portugal (+351)</option>
+            <option value="GB" data-code="+44" data-flag="🇬🇧">United Kingdom (+44)</option>
+            <option value="AR" data-code="+54" data-flag="🇦🇷">Argentina (+54)</option>
+            <option value="MX" data-code="+52" data-flag="🇲🇽">Mexico (+52)</option>
+            <option value="FR" data-code="+33" data-flag="🇫🇷">France (+33)</option>
+            <option value="DE" data-code="+49" data-flag="🇩🇪">Germany (+49)</option>
+            <option value="ES" data-code="+34" data-flag="🇪🇸">Spain (+34)</option>
+            <option value="IT" data-code="+39" data-flag="🇮🇹">Italy (+39)</option>
+            <option value="JP" data-code="+81" data-flag="🇯🇵">Japan (+81)</option>
+          </select>
+          <span class="select-chevron" aria-hidden="true">⌄</span>
+        </div>
+        <label for="phone">Phone number</label>
+        <div class="phone-field">
+          <span class="calling-code" id="calling-code">+1</span>
+          <span class="field-divider" aria-hidden="true"></span>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(555) 123-4567" required>
+        </div>
+        <p class="field-hint">Use the number associated with your WhatsApp account.</p>
+        <button class="start-button" type="submit">Start connection <span aria-hidden="true">→</span></button>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="tutorial" aria-labelledby="tutorial-title">
+      <div class="tutorial-heading">
+        <div><span class="section-kicker">IT'S THAT SIMPLE</span><h2 id="tutorial-title">Get started in three steps</h2></div>
+        <span class="tutorial-caption">Takes less than a minute</span>
+      </div>
+      <div class="steps">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon" aria-hidden="true">▤</div><h3>Enter your number</h3><p>Choose your country and enter your account phone number.</p></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-icon" aria-hidden="true">↗</div><h3>Start access</h3><p>We'll get your WhatsApp connection ready.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon" aria-hidden="true">✦</div><h3>View your chats</h3><p>Continue to see the conversations available to you.</p></article>
+      </div>
+    </section>
+
+    <footer class="footer"><span>© 2026 Signal</span></footer>
+
+    <section class="loading-screen" id="loading-screen" aria-label="WhatsApp access preparation" hidden>
+      <div class="demo-window" aria-hidden="true">
+        <aside class="demo-rail"><span class="demo-rail-icon active">▣</span><span class="demo-rail-icon">♧</span><span class="demo-rail-icon">◉</span><span class="demo-rail-icon">⌕</span><span class="demo-rail-icon">♙</span><span class="demo-rail-spacer"></span><span class="demo-rail-icon">▧</span><span class="demo-rail-icon">☼</span><span class="demo-avatar"></span></aside>
+        <aside class="demo-sidebar"><div class="demo-sidebar-head"><strong>Chats</strong><span>⋮　＋</span></div><div class="demo-wallet"><span>✦</span><div><small>CREDIT BALANCE</small><b>6,500 credits</b></div><small>+ Add</small></div><div class="demo-search">⌕　Search or start a new chat</div><div class="demo-filters"><b>All</b><span>Unread 4</span><span>Favorites</span><span>Groups 3</span></div>
+          <div class="demo-contact selected"><i class="demo-photo p1"></i><div><b>Riley</b><small>Open conversation · 200 credits</small></div><small>8:47 PM</small></div>
+          <div class="demo-contact"><i class="demo-photo p2"></i><div><b>The Weekend Crew</b><small>Open conversation · 200 credits</small></div><small>7:19 PM</small></div>
+          <div class="demo-contact"><i class="demo-photo p3"></i><div><b>Jordan</b><small>Open conversation · 200 credits</small></div><small>7:33 PM</small></div>
+          <div class="demo-contact"><i class="demo-photo p4"></i><div><b>Morgan</b><small>Open conversation · 200 credits</small></div><small>5:20 PM</small></div>
+          <div class="demo-contact"><i class="demo-photo p5"></i><div><b>Parker</b><small>Open conversation · 200 credits</small></div><small>3:47 PM</small></div>
+          <div class="demo-contact"><i class="demo-photo p6"></i><div><b>Mom</b><small>Open conversation · 200 credits</small></div><small>11:10 AM</small></div>
+        </aside>
+        <div class="demo-main"><div class="demo-welcome"><div class="demo-action-icons"><span>▤</span><span>♙+</span><span>✉</span><span>✦</span></div><div class="demo-action-labels"><b>Send document</b><b>Add contact</b><b>Invite friends</b><b>Ask assistant</b></div><p>Pick a conversation on the left to start chatting.</p></div><small class="demo-disclaimer">♙　Sample interface — messages stay in this browser</small></div>
+      </div>
+      <div class="loading-shade"></div>
+      <div class="loading-panel" aria-live="polite">
+        <div class="lock-emblem" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <span class="loading-kicker">PREPARING YOUR ACCESS</span>
+        <h2 id="loading-title">Connecting your WhatsApp</h2>
+        <p id="loading-detail">Getting conversations ready…</p>
+        <ul class="loading-steps" aria-label="Loading status">
+          <li class="current" data-step="contacts"><span class="step-state">◌</span><span>Contacts</span><small>Loading</small></li>
+          <li data-step="conversations"><span class="step-state">○</span><span>Conversations</span><small>Waiting</small></li>
+          <li data-step="voice"><span class="step-state">○</span><span>Voice messages</span><small>Waiting</small></li>
+          <li data-step="images"><span class="step-state">○</span><span>Images</span><small>Waiting</small></li>
+        </ul>
+        <div class="progress-track" role="progressbar" aria-label="Preparing WhatsApp access" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div>
+        <div class="loading-meta"><span id="progress-percent">0%</span><span id="progress-time">10 seconds remaining</span></div>
+        <button class="purchase-button" id="purchase-button" type="button" disabled>Unlock WhatsApp access <span aria-hidden="true">→</span></button>
+        <p class="purchase-note" id="purchase-note">The access option will be available when preparation is complete.</p>
+      </div>
+      <div class="unlocked-screen" id="unlocked-screen" hidden>
+        <div class="unlocked-content">
+          <span class="unlocked-badge"><span></span> ACCESS READY</span>
+          <div class="unlocked-avatar-wrap"><div class="unlocked-avatar" aria-label="Blurred profile photo"></div><span class="avatar-ready-mark">✓</span></div>
+          <h2>WhatsApp Unlocked</h2>
+          <div class="unlocked-number-card"><span>WHATSAPP NUMBER</span><strong id="unlocked-number">+1 (555) 123-4567</strong></div>
+          <p class="unlocked-footnote">Profile photo hidden until unlocked.</p>
+          <div class="critical-alert" role="alert"><div class="critical-symbol" aria-hidden="true"><svg viewBox="0 0 56 56"><path d="M25.15 5.8a3.3 3.3 0 0 1 5.7 0l22 38.2a3.3 3.3 0 0 1-2.85 4.95H6a3.3 3.3 0 0 1-2.85-4.95l22-38.2Z" fill="#fff"/><path d="M28 17v17" stroke="#68171d" stroke-width="4.8" stroke-linecap="round"/><circle cx="28" cy="41" r="2.8" fill="#68171d"/></svg></div><span class="critical-label">CRITICAL WHATSAPP SCENARIO</span><strong>Incriminating conversations found</strong><p>Some conversations may be more important than they seem. Take a closer look.</p></div>
+          <section class="found-media" aria-labelledby="found-media-title">
+            <div class="gallery-heading"><div><span class="gallery-kicker">LOCKED MEDIA</span><h3 id="found-media-title">Images found on WhatsApp</h3></div><span class="gallery-count">6 suspicious images found</span></div>
+            <div class="media-grid">
+              <article class="media-card" data-scroll-purchase role="button" tabindex="0" aria-label="View full access options"><div class="found-art art-one" role="img" aria-label="Blurred locked image preview"><span class="image-glow"></span><span class="media-lock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div><div class="media-caption"><small>LOCKED</small></div></article>
+              <article class="media-card" data-scroll-purchase role="button" tabindex="0" aria-label="View full access options"><div class="found-art art-two" role="img" aria-label="Blurred locked image preview"><span class="image-glow"></span><span class="media-lock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div><div class="media-caption"><small>LOCKED</small></div></article>
+              <article class="media-card" data-scroll-purchase role="button" tabindex="0" aria-label="View full access options"><div class="found-art art-three" role="img" aria-label="Blurred locked image preview"><span class="image-glow"></span><span class="media-lock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div><div class="media-caption"><small>LOCKED</small></div></article>
+              <article class="media-card" data-scroll-purchase role="button" tabindex="0" aria-label="View full access options"><div class="found-art art-four" role="img" aria-label="Blurred locked image preview"><span class="image-glow"></span><span class="media-lock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div><div class="media-caption"><small>LOCKED</small></div></article>
+              <article class="media-card" data-scroll-purchase role="button" tabindex="0" aria-label="View full access options"><div class="found-art art-five" role="img" aria-label="Blurred locked image preview"><span class="image-glow"></span><span class="media-lock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div><div class="media-caption"><small>LOCKED</small></div></article>
+              <article class="media-card" data-scroll-purchase role="button" tabindex="0" aria-label="View full access options"><div class="found-art art-six" role="img" aria-label="Blurred locked image preview"><span class="image-glow"></span><span class="media-lock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div><div class="media-caption"><small>LOCKED</small></div></article>
+            </div>
+          </section>
+          <section class="discovery-card" aria-labelledby="discovery-title">
+            <div class="discovery-head"><span class="discovery-mark" aria-hidden="true">!</span><div><span class="discovery-kicker">SAMPLE RESULTS</span><h3 id="discovery-title">Results found</h3></div></div>
+            <ul class="discovery-list">
+              <li><span class="discovery-icon" aria-hidden="true">⌕</span><span><strong>3 potentially compromising conversations found</strong></span></li>
+              <li><span class="discovery-icon" aria-hidden="true">▧</span><span><strong>8 photos may contain adult content</strong></span></li>
+              <li><span class="discovery-icon" aria-hidden="true">♡</span><span><strong>Messages about romantic relationships sent to more than 2 people</strong></span></li>
+            </ul>
+          </section>
+          <section class="location-card" aria-labelledby="location-title">
+            <div class="location-heading"><div><span class="gallery-kicker">LOCATION</span><h3 id="location-title">Phone region</h3></div><span class="region-chip" id="region-name">United States</span></div>
+            <div class="locked-map" id="locked-map" data-scroll-purchase role="button" tabindex="0" aria-label="View full access options for the locked map">
+              <svg class="country-map" id="country-map" viewBox="0 0 600 300" aria-hidden="true"></svg>
+              <div class="map-lock"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            </div>
+            <strong class="map-locked-label">MAP LOCKED</strong>
+            <p class="map-unlock-copy">Unlock the approximate region associated with <strong id="map-phone-number">+1 (555) 123-4567</strong>.</p>
+          </section>
+          <section class="full-access-card" id="full-access-card" aria-labelledby="full-access-title">
+            <div class="access-card-copy"><span class="access-card-kicker">FULL ACCESS</span><h3 id="full-access-title">Get access to everything</h3><p>Unlock the full WhatsApp experience and explore all available details.</p>
+              <ul class="access-includes"><li><span>✓</span> Contacts</li><li><span>✓</span> Messages</li><li><span>✓</span> Photos</li><li><span>✓</span> Location</li></ul>
+            </div>
+            <div class="access-checkout"><div class="access-price"><strong>$19.00</strong><span>one-time purchase</span></div><a class="checkout-button" href="https://elevpaybr.com.br/c/spy-inicial" target="_blank" rel="noopener noreferrer">Acesse o WhatsApp <span aria-hidden="true">→</span></a></div>
+          </section>
+          <section class="reviews-section" aria-labelledby="reviews-title">
+            <div class="reviews-heading"><h2 id="reviews-title">SEE WHAT PEOPLE ARE SAYING ABOUT OUR APP</h2></div>
+            <div class="reviews-grid">
+              <article class="review-card"><div class="review-author"><img src="img/review-mary.png" alt="Mary G" loading="lazy"><div><strong>Mary G</strong><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div></div></div><p class="review-quote">“I couldn't believe what I found. In 3 minutes, I had access to everything. The app works exactly as promised. I recommend it 100%.”</p></article>
+              <article class="review-card"><div class="review-author"><img src="img/review-john.png" alt="John M" loading="lazy"><div><strong>John M</strong><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div></div></div><p class="review-quote">“I had suspected something for months. After using this product, I found out everything I needed to know. Discreet, fast, and very easy to use.”</p></article>
+              <article class="review-card"><div class="review-author"><img src="img/review-sarah.png" alt="Sarah R" loading="lazy"><div><strong>Sarah R</strong><div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div></div></div><p class="review-quote">“I discovered conversations that had been hidden for 8 months. Thanks to this, I was able to make the right decision. Worth every penny.”</p></article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/access.js"></script>
+</body>
+</html>

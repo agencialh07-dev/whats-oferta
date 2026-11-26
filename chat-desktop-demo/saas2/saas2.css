@@ -1,0 +1,47 @@
+/* Paid story view: same interface as the original app, with the credit UI removed. */
+body.saas2-mode .session-meter,
+body.saas2-mode .credit-wallet,
+body.saas2-mode .credit-packs,
+body.saas2-mode .offer-backdrop,
+body.saas2-mode .session-backdrop { display:none !important; }
+body.saas2-mode .chat-credit-hint { color:var(--text-2); }
+body.saas2-mode .chat-row.is-sensitive .chat-name,
+body.saas2-mode .chat-row.is-sensitive .chat-preview,
+body.saas2-mode .chat-row.is-sensitive .chat-time { filter:blur(5px); user-select:none; }
+body.saas2-mode .chat-row.is-sensitive .chat-item { cursor:not-allowed; }
+body.saas2-mode .chat-row.is-sensitive::after { position:absolute; top:50%; right:17px; content:'🔒'; z-index:2; transform:translateY(-50%); font-size:13px; text-shadow:0 1px 4px #000; pointer-events:none; }
+body.saas2-mode .chat-more { opacity:.45; cursor:not-allowed !important; pointer-events:none; }
+body.saas2-mode [data-action="profile"] { cursor:not-allowed !important; pointer-events:none; }
+body.saas2-mode [data-action="unlock-media"],
+body.saas2-mode [data-action="unlock-audio"] { cursor:not-allowed !important; }
+body.saas2-mode .chat-more:hover { background:none; }
+
+body.saas2-mode.offer-active .app { filter:blur(9px); pointer-events:none; user-select:none; transition:filter .45s ease; }
+.security-offer[hidden] { display:none; }
+.security-offer { position:fixed; z-index:1000; inset:0; display:grid; place-items:center; overflow:auto; padding:20px; background:rgba(3,8,6,.72); backdrop-filter:blur(4px); }
+.security-card { position:relative; display:flex; flex-direction:column; align-items:center; width:min(100%,420px); padding:34px 30px 24px; border:1px solid #a72c37; border-radius:18px; background:linear-gradient(155deg,#1b1113,#100e0f); box-shadow:0 0 0 1px #ff344323,0 18px 70px #000b,0 0 36px #c6283638; text-align:center; animation:security-in .25s ease-out both; }
+.security-alert-icon { display:grid; place-items:center; width:64px; height:64px; margin:-3px auto 13px; border-radius:50%; background:#3a1015; box-shadow:0 0 24px #ff233944; animation:security-pulse 1.5s ease-in-out infinite; }
+.security-alert-icon svg { width:48px; height:48px; filter:drop-shadow(0 0 7px #fff8); }
+.security-kicker { color:#ff5360; font-size:9px; font-weight:800; letter-spacing:.17em; }
+.security-card h2 { margin:8px 0 16px; color:#fff; font:800 26px/1.15 Manrope,system-ui,sans-serif; letter-spacing:-.04em; }
+.security-warning { display:grid; gap:7px; width:100%; padding:16px 14px; border:1px solid #ff4654; border-radius:11px; background:linear-gradient(135deg,#ad1727,#6f111c); box-shadow:0 0 24px #ef263a49; color:#fff; }
+.security-warning strong { font-size:13px; font-weight:900; letter-spacing:.05em; }
+.security-warning span { color:#ffd9dc; font-size:11px; line-height:1.45; }
+.security-copy { margin:16px 0 10px; color:#c7d0c9; font-size:12px; }
+.security-price { display:grid;justify-items:center;gap:4px;margin:0 0 20px; }
+.security-price small { color:#ff8992;font-size:9px;font-weight:800;letter-spacing:.17em; }
+.security-price strong { color:#fff;font:800 45px/1 Manrope,system-ui,sans-serif;letter-spacing:-.055em;text-shadow:0 0 26px #ff384b67; }
+#elevpay-upsell-buttons { width:100%; }
+#elevpay-upsell-buttons button { width:100%; max-width:360px; min-height:54px; }
+.security-note { max-width:330px; margin:16px 0 0; color:#7e8d83; font-size:9px; line-height:1.5; }
+.security-card { padding:42px 32px 32px; }
+.security-card h2 { max-width:340px;margin:14px 0 28px;line-height:1.3; }
+.security-warning { gap:9px;margin-bottom:22px;padding:19px 16px; }
+.security-price { gap:9px;margin:4px 0 27px; }
+.security-price strong { font-size:52px; }
+#elevpay-upsell-buttons { margin-top:4px; }
+.security-card #elevpay-upsell-buttons button { min-height:58px; }
+@keyframes security-pulse { 0%,100%{filter:drop-shadow(0 0 4px #fff6);transform:scale(1)}50%{filter:drop-shadow(0 0 13px #fff);transform:scale(1.06)} }
+@keyframes security-in { from{opacity:0;transform:translateY(7px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)} }
+@media(max-width:520px) { .security-card{padding:34px 20px 26px}.security-card h2{font-size:23px;margin:12px 0 23px}.security-warning{margin-bottom:18px;padding:16px 12px}.security-price{margin-bottom:22px}.security-price strong{font-size:47px}.security-card #elevpay-upsell-buttons button{min-height:54px}.security-warning strong{font-size:11px} }
+@media(prefers-reduced-motion:reduce) { .security-alert-icon{animation:none}.security-card{animation:none} }
