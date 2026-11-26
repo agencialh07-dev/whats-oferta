@@ -185,7 +185,7 @@
       if (elapsed >= duration) {
         window.clearInterval(timer);
         loadingScreen.classList.add('is-complete');
-        loadingTitle.textContent = 'Your WhatsApp is ready';
+        loadingTitle.textContent = 'WhatsApp access is ready';
         loadingDetail.textContent = 'Your access is prepared.';
         purchaseButton.disabled = false;
         purchaseButton.innerHTML = 'Purchase access <span aria-hidden="true">→</span>';
