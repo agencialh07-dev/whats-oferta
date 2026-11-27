@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1411">
+  <title>How Are Things Between You and Your Partner?</title>
+  <style>
+    :root { color-scheme: dark; --mint: #73e49b; --ink: #edf5ef; --muted: #a8baae; --line: #30483a; font-family: system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; color: var(--ink); background: repeating-linear-gradient(0deg, #0000 0 3px, #ffffff04 3px 4px), radial-gradient(ellipse at 50% 0%, #172e22, #0d1411 65%); }
+    main { width: min(100% - 2rem, 58rem); margin: auto; padding: clamp(2rem, 8vh, 5rem) 0 2rem; }
+    header { text-align: center; margin-bottom: 1.8rem; }
+    h1 { margin: 0 0 .9rem; font-family: 'Segoe UI', Arial, sans-serif; font-size: clamp(1.9rem, 6.5vw, 4.1rem); font-weight: 800; line-height: 1.08; letter-spacing: -.045em; text-wrap: balance; }
+    h1 span { display: block; }
+    .title-accent { color: var(--mint); }
+    p { margin: 0; line-height: 1.5; }
+    header p { color: var(--muted); }
+    .card { width: min(100%, 32rem); margin-inline: auto; padding: clamp(1rem, 5vw, 1.6rem); border: 1px solid var(--line); border-radius: 1rem; background: linear-gradient(145deg, #18281f, #111a16); box-shadow: 0 18px 48px #0004; }
+    .status { display: flex; justify-content: space-between; gap: .5rem; color: var(--muted); font-size: .875rem; }
+    #step { color: var(--mint); }
+    progress { display: block; width: 100%; height: .3rem; margin: .65rem 0 1.25rem; border: 0; border-radius: 99px; overflow: hidden; background: #2a3c31; accent-color: var(--mint); }
+    progress::-webkit-progress-bar { background: #2a3c31; }
+    progress::-webkit-progress-value { background: var(--mint); }
+    h2 { margin: 0 0 1rem; font-size: clamp(1.2rem, 5vw, 1.5rem); line-height: 1.25; letter-spacing: -.025em; }
+    fieldset { border: 0; min-width: 0; margin: 0; padding: 0; display: grid; gap: .45rem; }
+    label { display: flex; align-items: center; gap: .65rem; min-height: 2.8rem; padding: .5rem .75rem; border: 1px solid var(--line); border-radius: .5rem; background: #101914; cursor: pointer; }
+    label:hover, label:has(:checked) { border-color: var(--mint); }
+    button.choice { margin: 0; border: 1px solid var(--line); background: #101914; color: var(--ink); padding: .5rem .75rem; text-align: left; font-weight: 400; }
+    button.choice:hover { border-color: var(--mint); }
+    input { width: 1rem; height: 1rem; flex: none; margin: 0; accent-color: var(--mint); }
+    button, #action { width: 100%; min-height: 2.9rem; border: 0; border-radius: .5rem; font: inherit; cursor: pointer; }
+    #action { display: grid; place-items: center; margin-top: 1rem; background: var(--mint); color: #101b14; font-weight: 750; text-decoration: none; }
+    #action:hover { background: #99f2b8; }
+    :focus-visible { outline: 2px solid #c5f8d6; outline-offset: 4px; }
+    #action[hidden] { display: none; }
+  </style>
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="title" tabindex="-1"><span>How are things between you</span> <span class="title-accent">and your partner?</span></h1>
+      <p>4 questions about connection, communication, and trust.</p>
+    </header>
+    <section class="card" id="card" aria-labelledby="question">
+      <div class="status"><span id="step"></span></div>
+      <progress id="progress" aria-label="Questions answered" max="4" value="0"></progress>
+      <h2 id="question" tabindex="-1"></h2>
+      <fieldset id="choices" aria-labelledby="question"></fieldset>
+      <a id="action" href="https://www.watzly.online/" hidden>Finish</a>
+      <noscript>Enable JavaScript to take the quiz.</noscript>
+    </section>
+  </main>
+</body>
+</html>
